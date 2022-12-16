@@ -160,3 +160,10 @@ i {
     font-weight: 700;
     margin-bottom: 0.3rem;
 }
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
