@@ -51,9 +51,52 @@ table {
 
 /* Reset Ends */
 
+:root {
+    --bg-color: #eeeeee;
+    --accent-color1: #ff8c00; 
+    --accent-color2: #f1c40f; 
+    --neutral-color1: #dddddd; 
+    --neutral-color2: #000; 
+    --title-size: 20px; 
+    --subt-size: 16px; 
+    --text-size: 14px; 
+}
+
 body {
     min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--neutral-color2); 
+    font-family: Lato, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--neutral-color2);
+    margin: 0 2rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
