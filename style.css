@@ -57,7 +57,7 @@ table {
     --accent-color2: #f1c40f; 
     --neutral-color1: #dddddd; 
     --neutral-color2: #000; 
-    --title-size: 20px; 
+    --title-size: 24px; 
     --subt-size: 16px; 
     --text-size: 14px; 
 }
@@ -70,12 +70,17 @@ body {
     background-color: var(--bg-color);
     color: var(--neutral-color2); 
     font-family: Lato, sans-serif;
+    position: relative;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    padding: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--bg-color);
 }
 
 #header-img {
@@ -99,4 +104,30 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+label {
+    font-size: var(--title-size);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#email {
+    padding: 0.2rem 3rem 0.2rem 0.3rem;
+    margin-bottom: 1rem;
+}
+
+#submit {
+    border: none;
+    background-color: var(--accent-color2);
+    text-transform: uppercase;
+    font-size: var(--subt-size);
+    font-weight: 700;
+    padding: 0.3rem 1.3rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--accent-color1);
+    transition: background-color, 1s;
 }
